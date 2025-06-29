@@ -680,10 +680,10 @@ export default function Home() {
                     A
                   </motion.div>
                   <h3 className="text-xl font-bold mb-2 text-white group-hover:text-pink-400 transition-colors duration-300">
-                    Definetely not Ananya
+                    Ananya Pratap Singh
                   </h3>
                   <p className="text-gray-400 text-sm mb-4">
-                    Full Stack Developer & Community Creator
+                    Probably doing something illegal 
                   </p>
                   <p className="text-xs text-pink-300 mb-3 italic">
                     "Turning coffee into code since forever!" ☕
