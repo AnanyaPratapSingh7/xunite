@@ -39,6 +39,56 @@ Think of it as a digital carnival where each developer gets their own booth to s
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000) to see XUNITE in action!
 
+## 🌐 Deployment to GitHub Pages
+
+XUNITE is configured for automatic deployment to GitHub Pages! Here's how to set it up:
+
+### Automatic Deployment (Recommended)
+
+1. **Push your changes to GitHub**
+   ```bash
+   git add .
+   git commit -m "Your awesome changes!"
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages**
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - The workflow will automatically build and deploy your site
+
+3. **Access your live site**
+   - Your site will be available at: `https://yourusername.github.io/xunite`
+   - The first deployment may take a few minutes
+
+### Manual Deployment
+
+If you prefer to deploy manually:
+
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
+
+2. **The static files will be generated in the `out` folder**
+
+3. **Deploy the `out` folder contents to your hosting service**
+
+### Configuration Details
+
+The project is configured with:
+- **Static Export**: Next.js generates static HTML files
+- **Base Path**: Configured for GitHub Pages (`/xunite`)
+- **Image Optimization**: Disabled for static export compatibility
+- **Trailing Slashes**: Enabled for better compatibility
+
+### Troubleshooting
+
+- **404 Errors**: Make sure your repository name matches the `basePath` in `next.config.mjs`
+- **Build Failures**: Check that all dependencies are installed and compatible
+- **Styling Issues**: Ensure Tailwind CSS is properly configured
+
 ## 🎨 How to Contribute
 
 ### Step 1: Fork the Repository
